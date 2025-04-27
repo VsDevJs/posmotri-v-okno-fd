@@ -85,7 +85,7 @@ ol {
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
-  grid-template-areas: 'result result content__details';
+  grid-template-areas: 'result content__details';
   align-items: end;
   gap: 30px;
   min-width: 1140px;
@@ -95,6 +95,7 @@ ol {
 /*  section 1 */
 
 .result {
+  grid-area: result;
   display: flex;
   flex-direction: column;
   row-gap: 16px;
@@ -252,7 +253,9 @@ ol {
 }
 
 /* Второй section */
+
 .content__details {
+  grid-area: content__details;
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -275,7 +278,7 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  height:194px;
+  width:194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
